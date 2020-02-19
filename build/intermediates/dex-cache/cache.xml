@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_7b07d96618808f2f22f2849822ad231e64f675ee\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_d35595c3f8f737d08017137c27d4dfe27b3d8193\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_06d4199e05e8aeb36ad4dd2fbaca4d438a825933\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_f8582855bde87c3968b2456b2ea0be5adaa7470d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\libs\weka.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1d553332d3346a8efe1d52000973115cc5ef975d">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\2\weka_afbd9018f8a3f9d6cb38f733a02cffd730a64ce5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d78a8737678de89d71381a24baa29a4274256cd">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_a1cd05a6861d1c79969fc467d79ee000f1d22123\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_7e16a529f8af79ef2d4a8b1adf9187cd1d982809\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f79a9697274ddb5a19e61439e66a26f4e6dc8e0c">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0056fff80c4f23cc0bdcccfe2d5ec85639275614\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_c09b45b75c516729dcba31a375e63274d12c6ccf\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_b56ddeb9e4e70cea2453f36887aaef2131794a03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-v13\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e006c9b6f0aaed9d8c7934b74039738390fe3468">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v13-25.1.0_f7e8410e8af2a91026027ae2749f3e4e269f82ab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_d0488f07fb5279b3514bd887792e0ff9eca21267\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_efbf83fa2b93e08a17c4f8df35de3e14e1965322\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Xing-Dong Yang\Desktop\CS65 code\myrunsdatacollector\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_de2d2496243af071e92ea2b8293d5419e73003bb\classes.dex" />
+    </item>
+
+</items>

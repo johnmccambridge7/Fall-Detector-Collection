@@ -1,0 +1,164 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v13:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v13-28.0.0.aar/6e707c99b8d79d56f3199208e060f436/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/535418016c5b0716d72f35ecbde927d5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/affa6c07b30a34bd62269562f44d11a5/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5c92c9d7d3cbd3c65eb3a3e9ac5f7f71/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9d420208b4de55b13668f7607904f0d9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6d8eb3afb7db2d5baf846298e47cd27e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/be4a4b6abd1309b5f8c0c1262ce672a1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dd82d62e6153ba1259240709114f0c6a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c9a90bf85202e341c6196b3915f77282/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6d1dc71c36bca46cabe0730b49f5b38e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/82714c785c4008705c8e067dbcfe8bff/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d2538816fcb0f695633bb4425588f3ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/6526e4789d2ba5f37347d26c780b740f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/dc17652b2b8bf6871d74fc77b950e504/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/adf8b15124fedb866279f3a9ded76462/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2869935ff07cde22a389d96543d85599/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/57d06ec9979cbad4ecc79b730e6ca25a/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/462fb25beddbde35f7aa8ac6d3a4618b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ca53d81f396245a9bc3ba1cce000da91/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/3fbc3b7d32321c6b1c9bbf6e514e1e37/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c3b40d41b5a0b4aece5a3d3be322e224/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e03315130c3f3d95f64935ee3039f2ad/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6e0ad67215f3e17f49ce8672bb561d81/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a6d9e86fbd3c337c35735407d9ae315e/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8393483d490e704e85648d39d804c0cf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:7:22-78
+application
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:9:5-27:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:18-91
+	android:label
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:10:9-41
+	android:theme
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:11:9-40
+activity#edu.dartmouth.cs.myrunscollector.CollectorActivity
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:13:9-22:20
+	android:screenOrientation
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:16:13-49
+	android:label
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:15:13-45
+	android:name
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:14:13-78
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:20:27-74
+service#edu.dartmouth.cs.myrunscollector.SensorsService
+ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:25:9-83
+	android:name
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml:25:18-80
+uses-sdk
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v13-28.0.0.aar/6e707c99b8d79d56f3199208e060f436/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v13-28.0.0.aar/6e707c99b8d79d56f3199208e060f436/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/535418016c5b0716d72f35ecbde927d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/535418016c5b0716d72f35ecbde927d5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/affa6c07b30a34bd62269562f44d11a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/affa6c07b30a34bd62269562f44d11a5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5c92c9d7d3cbd3c65eb3a3e9ac5f7f71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/5c92c9d7d3cbd3c65eb3a3e9ac5f7f71/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9d420208b4de55b13668f7607904f0d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/9d420208b4de55b13668f7607904f0d9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6d8eb3afb7db2d5baf846298e47cd27e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/6d8eb3afb7db2d5baf846298e47cd27e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/be4a4b6abd1309b5f8c0c1262ce672a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/be4a4b6abd1309b5f8c0c1262ce672a1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dd82d62e6153ba1259240709114f0c6a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/dd82d62e6153ba1259240709114f0c6a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c9a90bf85202e341c6196b3915f77282/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-media-compat-28.0.0.aar/c9a90bf85202e341c6196b3915f77282/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6d1dc71c36bca46cabe0730b49f5b38e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/6d1dc71c36bca46cabe0730b49f5b38e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/82714c785c4008705c8e067dbcfe8bff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/82714c785c4008705c8e067dbcfe8bff/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d2538816fcb0f695633bb4425588f3ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/d2538816fcb0f695633bb4425588f3ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/6526e4789d2ba5f37347d26c780b740f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/6526e4789d2ba5f37347d26c780b740f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/dc17652b2b8bf6871d74fc77b950e504/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/dc17652b2b8bf6871d74fc77b950e504/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/adf8b15124fedb866279f3a9ded76462/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/adf8b15124fedb866279f3a9ded76462/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2869935ff07cde22a389d96543d85599/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2869935ff07cde22a389d96543d85599/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/57d06ec9979cbad4ecc79b730e6ca25a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/57d06ec9979cbad4ecc79b730e6ca25a/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/462fb25beddbde35f7aa8ac6d3a4618b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/462fb25beddbde35f7aa8ac6d3a4618b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ca53d81f396245a9bc3ba1cce000da91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/ca53d81f396245a9bc3ba1cce000da91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/3fbc3b7d32321c6b1c9bbf6e514e1e37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/3fbc3b7d32321c6b1c9bbf6e514e1e37/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c3b40d41b5a0b4aece5a3d3be322e224/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/c3b40d41b5a0b4aece5a3d3be322e224/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e03315130c3f3d95f64935ee3039f2ad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/e03315130c3f3d95f64935ee3039f2ad/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6e0ad67215f3e17f49ce8672bb561d81/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/6e0ad67215f3e17f49ce8672bb561d81/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a6d9e86fbd3c337c35735407d9ae315e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a6d9e86fbd3c337c35735407d9ae315e/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8393483d490e704e85648d39d804c0cf/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8393483d490e704e85648d39d804c0cf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:20:5-44
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/MyRuns5/myrunsdatacollector/app/src/main/AndroidManifest.xml
