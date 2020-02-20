@@ -21,20 +21,16 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils.DataSource;
 
-import android.Manifest;
-import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -49,12 +45,13 @@ public class SensorsService extends Service implements SensorEventListener {
 	
 	private File mFeatureFile;
 	private SensorManager mSensorManager;
-	private Sensor mAccelerometer;
+	private Sensor sensor;
 	private int mServiceTaskType;
 	private String mLabel;
 	private Instances mDataset;
 	private Attribute mClassAttribute;
 	private OnSensorChangedTask mAsyncTask;
+	private int sensorType;
 
 	private static ArrayBlockingQueue<Double> mAccBuffer;
 	public static final DecimalFormat mdf = new DecimalFormat("#.##");
@@ -71,16 +68,32 @@ public class SensorsService extends Service implements SensorEventListener {
 	public int onStartCommand(Intent intent, int flags, int startId) {
 
 		mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-		mAccelerometer = mSensorManager
-				.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
 
-		mSensorManager.registerListener(this, mAccelerometer,
+		sensorType = intent.getIntExtra(Globals.SENSOR_TYPE_TAG, 0);
+		if (sensorType == 0) {
+			sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+		}
+		else if (sensorType == 1) {
+			sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+		}
+
+		boolean exists = mSensorManager.registerListener(this, sensor,
 				SensorManager.SENSOR_DELAY_FASTEST);
+		if (!exists)
+		{
+			Log.d("lucho", "Sensor does not exist");
+			stopSelf();
+		}
 
 		Bundle extras = intent.getExtras();
 		mLabel = extras.getString(Globals.CLASS_LABEL_KEY);
 
-		mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.FEATURE_FILE_NAME);		Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
+		if (sensorType == 0) {
+			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);        //Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
+		}
+		else {
+			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.GYROSCOPE_FILENAME);
+		}
 
 		mServiceTaskType = Globals.SERVICE_TASK_TYPE_COLLECT;
 
@@ -99,6 +112,7 @@ public class SensorsService extends Service implements SensorEventListener {
 		// Declare a nominal attribute along with its candidate values
 		ArrayList<String> labelItems = new ArrayList<String>(3);
 		labelItems.add(Globals.CLASS_LABEL_NEUTRAL);
+		labelItems.add(Globals.CLASS_LABEL_SLIP);
 		labelItems.add(Globals.CLASS_LABEL_FALL);
 		mClassAttribute = new Attribute(Globals.CLASS_LABEL_KEY, labelItems);
 		allAttr.add(mClassAttribute);

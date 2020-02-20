@@ -19,6 +19,13 @@
             android:text="Neutral" />
 
         <RadioButton
+            android:id="@+id/radioslip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Slip" />
+
+        <RadioButton
             android:id="@+id/radiofall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,6 +33,29 @@
             android:text="Fall" />
 
     </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/sensorTypeGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp" >
+
+        <RadioButton
+            android:id="@+id/radioaccelerometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Accelerometer" />
+
+        <RadioButton
+            android:id="@+id/radiogyro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="GyroScope" />
+
+    </RadioGroup>
+
 
    
 

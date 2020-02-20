@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v13:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v13-28.0.0.aar/6e707c99b8d79d56f3199208e060f436/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v4-28.0.0.aar/535418016c5b0716d72f35ecbde927d5/AndroidManifest.xml:17:1-22:12
@@ -33,29 +33,29 @@ MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/luischamorro/.gradle/
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/a6d9e86fbd3c337c35735407d9ae315e/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8393483d490e704e85648d39d804c0cf/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:17:1-22:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:1-29:12
 	package
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:3:5-47
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:3:5-47
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:5:5-30
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:5:5-30
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:4:5-28
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:7:5-81
 	android:name
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:7:22-78
 application
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:9:5-27:19
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:9:5-27:19
 MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:5-94
 MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/f603c3d1a9428d985910273eae1631bd/AndroidManifest.xml:22:5-23:19
@@ -63,37 +63,37 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/luischamorro
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/26d5577bd5e8c5388d4b751dbcac266e/AndroidManifest.xml:22:18-91
 	android:label
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:12:9-41
 	android:icon
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:10:9-41
 	android:theme
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:11:9-40
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:11:9-40
 activity#edu.dartmouth.cs.myrunscollector.CollectorActivity
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:13:9-22:20
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:13:9-22:20
 	android:screenOrientation
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:16:13-49
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:16:13-49
 	android:label
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:15:13-45
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:15:13-45
 	android:name
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:14:13-78
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:14:13-78
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:17:13-21:29
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:18:17-69
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:18:25-66
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:20:17-77
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:20:27-74
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:20:27-74
 service#edu.dartmouth.cs.myrunscollector.SensorsService
-ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:25:9-83
+ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:25:9-83
 	android:name
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:25:18-80
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml:25:18-80
 uses-sdk
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/support-v13-28.0.0.aar/6e707c99b8d79d56f3199208e060f436/AndroidManifest.xml:20:5-44
@@ -152,13 +152,13 @@ MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches
 MERGED from [android.arch.core:runtime:1.1.1] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/8393483d490e704e85648d39d804c0cf/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:interpolator:28.0.0] /Users/luischamorro/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/b7ca09a0b17b85cb98713e2093a383e5/AndroidManifest.xml:20:5-44
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		ADDED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		ADDED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/src/main/AndroidManifest.xml

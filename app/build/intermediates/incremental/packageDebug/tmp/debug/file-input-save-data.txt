@@ -1,11 +1,11 @@
 #Internal package file, do not edit.
-#Wed Feb 19 08:53:21 EST 2020
-1.base=/Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/1
+#Thu Feb 20 17:08:03 EST 2020
+1.base=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY
 count=2
 1.set=DEX
 0.path=classes.dex
 0.set=DEX
-0.base=/Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
+0.base=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/1
 1.path=classes.dex

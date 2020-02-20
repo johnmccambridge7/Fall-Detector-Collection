@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.support.v13.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -29,9 +30,11 @@ public class CollectorActivity extends AppCompatActivity {
 			Globals.CLASS_LABEL_FALL };
 
 	private RadioGroup radioGroup;
-	private final RadioButton[] radioBtns = new RadioButton[2];
+	private final RadioButton[] radioBtns = new RadioButton[3];
+	private RadioGroup sensorTypeGroup;
 	private Intent mServiceIntent;
-	private File mFeatureFile;
+	private File mAccelerometerFile;
+	private File mGyroFile;
 
 	private State mState;
 	private Button btnDelete;
@@ -42,13 +45,16 @@ public class CollectorActivity extends AppCompatActivity {
 		setContentView(R.layout.main);
 		checkPermissions(this);
 		radioGroup = (RadioGroup) findViewById(R.id.radioGroupLabels);
+		sensorTypeGroup = (RadioGroup) findViewById(R.id.sensorTypeGroup);
 		radioBtns[0] = (RadioButton) findViewById(R.id.radioneutral);
-		radioBtns[1] = (RadioButton) findViewById(R.id.radiofall);
+		radioBtns[1] = (RadioButton) findViewById(R.id.radioslip);
+		radioBtns[2] = (RadioButton) findViewById(R.id.radiofall);
 
 		btnDelete = (Button) findViewById(R.id.btnDeleteData);
 
 		mState = State.IDLE;
-		mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.FEATURE_FILE_NAME);
+		mAccelerometerFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);
+		mGyroFile = new File(Environment.getExternalStorageDirectory(), Globals.GYROSCOPE_FILENAME);
 		mServiceIntent = new Intent(this, SensorsService.class);
 	}
 
@@ -67,6 +73,10 @@ public class CollectorActivity extends AppCompatActivity {
 
 			Bundle extras = new Bundle();
 			extras.putString(Globals.CLASS_LABEL_KEY, label);
+			int sensorType = sensorTypeGroup.indexOfChild(findViewById(sensorTypeGroup
+					.getCheckedRadioButtonId()));
+			extras.putInt(Globals.SENSOR_TYPE_TAG, sensorType);
+
 			mServiceIntent.putExtras(extras);
 
 			startService(mServiceIntent);
@@ -77,6 +87,7 @@ public class CollectorActivity extends AppCompatActivity {
 			btnDelete.setEnabled(true);
 			radioBtns[0].setEnabled(true);
 			radioBtns[1].setEnabled(true);
+			radioBtns[2].setEnabled(true);
 
 			stopService(mServiceIntent);
 			((NotificationManager) getSystemService(NOTIFICATION_SERVICE)).cancelAll();
@@ -86,8 +97,11 @@ public class CollectorActivity extends AppCompatActivity {
 	public void onDeleteDataClicked(View view) {
 
 		if (Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState())) {
-			if (mFeatureFile.exists()) {
-				mFeatureFile.delete();
+			if (mAccelerometerFile.exists()) {
+				mAccelerometerFile.delete();
+			}
+			if (mGyroFile.exists()) {
+				mGyroFile.delete();
 			}
 
 			Toast.makeText(getApplicationContext(),

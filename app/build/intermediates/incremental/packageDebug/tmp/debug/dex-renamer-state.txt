@@ -1,7 +1,7 @@
-#Wed Feb 19 08:53:20 EST 2020
-base.0=/Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
+#Thu Feb 20 17:08:03 EST 2020
+base.0=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=/Users/luischamorro/Desktop/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/1
+base.1=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/1

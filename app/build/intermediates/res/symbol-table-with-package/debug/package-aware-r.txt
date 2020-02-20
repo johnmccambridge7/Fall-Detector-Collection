@@ -680,8 +680,11 @@ id progress_circular
 id progress_horizontal
 id radio
 id radioGroupLabels
+id radioaccelerometer
 id radiofall
+id radiogyro
 id radioneutral
+id radioslip
 id right
 id right_icon
 id right_side
@@ -700,6 +703,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id select_dialog_listview
+id sensorTypeGroup
 id shortcut
 id showCustom
 id showHome

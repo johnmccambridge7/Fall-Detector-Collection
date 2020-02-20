@@ -32,18 +32,21 @@ public abstract class Globals {
 	
 	public static final String CLASS_LABEL_KEY = "label";
 	public static final String CLASS_LABEL_NEUTRAL = "neutral";
+	public static final String CLASS_LABEL_SLIP = "slip";
 	public static final String CLASS_LABEL_FALL = "fall";
 	
 	public static final String FEAT_FFT_COEF_LABEL = "fft_coef_";
 	public static final String FEAT_MAX_LABEL = "max";
 	public static final String FEAT_SET_NAME = "accelerometer_features";
 
-	public static final String FEATURE_FILE_NAME = "safety.arff";
+	public static final String ACCELEROMETER_FILENAME = "acc_safety.arff";
+	public static final String GYROSCOPE_FILENAME = "gyro_safety.arff";
 	public static final String RAW_DATA_NAME = "raw_data.txt";
 	public static final int FEATURE_SET_CAPACITY = 10000;
 	
 	public static final int NOTIFICATION_ID = 1;
-	
-	
+
+	public static final String SENSOR_TYPE_TAG = "sensor_type";
+	// 0 is accelerometer, 1 is gyroscope
   
 }
