@@ -91,8 +91,11 @@ public class SensorsService extends Service implements SensorEventListener {
 		if (sensorType == 0) {
 			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);        //Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
 		}
-		else {
+		else if (sensorType == 1){
 			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.GYROSCOPE_FILENAME);
+		}
+		else {
+			stopSelf();
 		}
 
 		mServiceTaskType = Globals.SERVICE_TASK_TYPE_COLLECT;
@@ -228,7 +231,7 @@ public class SensorsService extends Service implements SensorEventListener {
 		@Override
 		protected void onCancelled() {
 			
-			Log.e("123", mDataset.size()+"");
+			Log.e("lucho", "Canceled");
 			
 			if (mServiceTaskType == Globals.SERVICE_TASK_TYPE_CLASSIFY) {
 				super.onCancelled();
@@ -239,6 +242,7 @@ public class SensorsService extends Service implements SensorEventListener {
 
 			if (mFeatureFile.exists()) {
 
+				Log.d("lucho", "It exists");
 				// merge existing and delete the old dataset
 				DataSource source;
 				try {

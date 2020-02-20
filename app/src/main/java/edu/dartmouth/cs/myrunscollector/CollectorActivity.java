@@ -26,7 +26,7 @@ public class CollectorActivity extends AppCompatActivity {
 		IDLE, COLLECTING, TRAINING, CLASSIFYING
 	};
 
-	private final String[] mLabels = { Globals.CLASS_LABEL_NEUTRAL,
+	private final String[] mLabels = { Globals.CLASS_LABEL_NEUTRAL, Globals.CLASS_LABEL_SLIP,
 			Globals.CLASS_LABEL_FALL };
 
 	private RadioGroup radioGroup;
@@ -69,6 +69,7 @@ public class CollectorActivity extends AppCompatActivity {
 
 			int acvitivtyId = radioGroup.indexOfChild(findViewById(radioGroup
 					.getCheckedRadioButtonId()));
+			Log.d("lucho", "act id is " + acvitivtyId);
 			String label = mLabels[acvitivtyId];
 
 			Bundle extras = new Bundle();
