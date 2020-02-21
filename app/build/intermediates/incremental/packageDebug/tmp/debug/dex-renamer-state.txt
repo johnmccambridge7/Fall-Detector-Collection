@@ -1,4 +1,4 @@
-#Thu Feb 20 19:14:18 EST 2020
+#Fri Feb 21 10:53:32 EST 2020
 base.0=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
 path.1=classes.dex
 renamed.1=classes2.dex

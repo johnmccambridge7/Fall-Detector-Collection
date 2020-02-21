@@ -33,6 +33,7 @@ public class CollectorActivity extends AppCompatActivity {
 	private final RadioButton[] radioBtns = new RadioButton[3];
 	private RadioGroup sensorTypeGroup;
 	private RadioButton accelorometerButton;
+	private RadioButton gyroButton;
 	private Intent mServiceIntent;
 	private File mAccelerometerFile;
 	private File mGyroFile;
@@ -52,6 +53,7 @@ public class CollectorActivity extends AppCompatActivity {
 		radioBtns[2] = (RadioButton) findViewById(R.id.radiofall);
 		accelorometerButton = findViewById(R.id.radioaccelerometer);
 		accelorometerButton.toggle();
+		gyroButton = findViewById(R.id.radiogyro);
 
 		btnDelete = (Button) findViewById(R.id.btnDeleteData);
 
@@ -70,6 +72,8 @@ public class CollectorActivity extends AppCompatActivity {
 			radioBtns[0].setEnabled(false);
 			radioBtns[1].setEnabled(false);
 			radioBtns[2].setEnabled(false);
+			accelorometerButton.setEnabled(false);
+			gyroButton.setEnabled(false);
 
 			int acvitivtyId = radioGroup.indexOfChild(findViewById(radioGroup
 					.getCheckedRadioButtonId()));
@@ -94,6 +98,8 @@ public class CollectorActivity extends AppCompatActivity {
 			radioBtns[0].setEnabled(true);
 			radioBtns[1].setEnabled(true);
 			radioBtns[2].setEnabled(true);
+			accelorometerButton.setEnabled(true);
+			gyroButton.setEnabled(true);
 
 			stopService(mServiceIntent);
 			((NotificationManager) getSystemService(NOTIFICATION_SERVICE)).cancelAll();
