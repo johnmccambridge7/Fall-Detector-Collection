@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Thu Feb 20 17:34:25 EST 2020
+#Thu Feb 20 19:14:19 EST 2020
 1.base=/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/transforms/dexMerger/debug/0
 0.baseType=DIRECTORY
 1.baseType=DIRECTORY

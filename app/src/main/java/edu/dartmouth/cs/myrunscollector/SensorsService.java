@@ -1,8 +1,8 @@
 /**
  * LocationService.java
- * 
+ *
  * Created by Xiaochao Yang on Sep 11, 2011 4:50:19 PM
- * 
+ *
  */
 
 package edu.dartmouth.cs.myrunscollector;
@@ -10,6 +10,7 @@ package edu.dartmouth.cs.myrunscollector;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -21,16 +22,20 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils.DataSource;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -42,10 +47,10 @@ import com.meapsoft.FFT;
 public class SensorsService extends Service implements SensorEventListener {
 
 	private static final int mFeatLen = Globals.ACCELEROMETER_BLOCK_CAPACITY + 2;
-	
+
 	private File mFeatureFile;
 	private SensorManager mSensorManager;
-	private Sensor sensor;
+	private Sensor mAccelerometer;
 	private int mServiceTaskType;
 	private String mLabel;
 	private Instances mDataset;
@@ -71,32 +76,21 @@ public class SensorsService extends Service implements SensorEventListener {
 
 		sensorType = intent.getIntExtra(Globals.SENSOR_TYPE_TAG, 0);
 		if (sensorType == 0) {
-			sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+			mAccelerometer = mSensorManager
+					.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 		}
 		else if (sensorType == 1) {
-			sensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
+			mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 		}
+		Log.d("lucho", "sensortype was " + sensorType);
 
-		boolean exists = mSensorManager.registerListener(this, sensor,
+		mSensorManager.registerListener(this, mAccelerometer,
 				SensorManager.SENSOR_DELAY_FASTEST);
-		if (!exists)
-		{
-			Log.d("lucho", "Sensor does not exist");
-			stopSelf();
-		}
 
 		Bundle extras = intent.getExtras();
 		mLabel = extras.getString(Globals.CLASS_LABEL_KEY);
 
-		if (sensorType == 0) {
-			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);        //Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
-		}
-		else if (sensorType == 1){
-			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.GYROSCOPE_FILENAME);
-		}
-		else {
-			stopSelf();
-		}
+		mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);		Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
 
 		mServiceTaskType = Globals.SERVICE_TASK_TYPE_COLLECT;
 
@@ -189,10 +183,10 @@ public class SensorsService extends Service implements SensorEventListener {
 				try {
 					// need to check if the AsyncTask is cancelled or not in the while loop
 					if (isCancelled () == true)
-				    {
-				        return null;
-				    }
-					
+					{
+						return null;
+					}
+
 					// Dumping buffer
 					accBlock[blockSize++] = mAccBuffer.take().doubleValue();
 
@@ -230,9 +224,9 @@ public class SensorsService extends Service implements SensorEventListener {
 
 		@Override
 		protected void onCancelled() {
-			
-			Log.e("lucho", "Canceled");
-			
+
+			Log.e("123", mDataset.size()+"");
+
 			if (mServiceTaskType == Globals.SERVICE_TASK_TYPE_CLASSIFY) {
 				super.onCancelled();
 				return;
@@ -242,7 +236,6 @@ public class SensorsService extends Service implements SensorEventListener {
 
 			if (mFeatureFile.exists()) {
 
-				Log.d("lucho", "It exists");
 				// merge existing and delete the old dataset
 				DataSource source;
 				try {
@@ -260,6 +253,8 @@ public class SensorsService extends Service implements SensorEventListener {
 						throw new Exception(
 								"The two datasets have different headers:\n");
 					}
+
+					Log.d("lucho", "size is " + oldDataset.size() + " and new ds is " + mDataset.size());
 
 					// Move all items over manually
 					for (int i = 0; i < mDataset.size(); i++) {
@@ -298,7 +293,7 @@ public class SensorsService extends Service implements SensorEventListener {
 				toastDisp = getString(R.string.ui_sensor_service_toast_error_file_saving_failed);
 				e.printStackTrace();
 			}
-			
+
 			Log.i("toast","toast here");
 			super.onCancelled();
 		}
@@ -307,7 +302,10 @@ public class SensorsService extends Service implements SensorEventListener {
 
 	public void onSensorChanged(SensorEvent event) {
 
-		if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION) {
+		if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER || event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
+
+//			Log.d("lucho", "Values are " + event.values[0] + " " + event.values[1] + " " +
+//					event.values[2]);
 
 			double m = Math.sqrt(event.values[0] * event.values[0]
 					+ event.values[1] * event.values[1] + event.values[2]

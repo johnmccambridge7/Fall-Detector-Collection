@@ -32,6 +32,7 @@ public class CollectorActivity extends AppCompatActivity {
 	private RadioGroup radioGroup;
 	private final RadioButton[] radioBtns = new RadioButton[3];
 	private RadioGroup sensorTypeGroup;
+	private RadioButton accelorometerButton;
 	private Intent mServiceIntent;
 	private File mAccelerometerFile;
 	private File mGyroFile;
@@ -49,6 +50,8 @@ public class CollectorActivity extends AppCompatActivity {
 		radioBtns[0] = (RadioButton) findViewById(R.id.radioneutral);
 		radioBtns[1] = (RadioButton) findViewById(R.id.radioslip);
 		radioBtns[2] = (RadioButton) findViewById(R.id.radiofall);
+		accelorometerButton = findViewById(R.id.radioaccelerometer);
+		accelorometerButton.toggle();
 
 		btnDelete = (Button) findViewById(R.id.btnDeleteData);
 
@@ -66,6 +69,7 @@ public class CollectorActivity extends AppCompatActivity {
 			btnDelete.setEnabled(false);
 			radioBtns[0].setEnabled(false);
 			radioBtns[1].setEnabled(false);
+			radioBtns[2].setEnabled(false);
 
 			int acvitivtyId = radioGroup.indexOfChild(findViewById(radioGroup
 					.getCheckedRadioButtonId()));
@@ -76,6 +80,7 @@ public class CollectorActivity extends AppCompatActivity {
 			extras.putString(Globals.CLASS_LABEL_KEY, label);
 			int sensorType = sensorTypeGroup.indexOfChild(findViewById(sensorTypeGroup
 					.getCheckedRadioButtonId()));
+			if (sensorType == -1) sensorType = 0;
 			extras.putInt(Globals.SENSOR_TYPE_TAG, sensorType);
 
 			mServiceIntent.putExtras(extras);
