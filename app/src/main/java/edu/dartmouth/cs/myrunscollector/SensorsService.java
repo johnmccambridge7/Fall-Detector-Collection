@@ -90,7 +90,12 @@ public class SensorsService extends Service implements SensorEventListener {
 		Bundle extras = intent.getExtras();
 		mLabel = extras.getString(Globals.CLASS_LABEL_KEY);
 
-		mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);		Log.d(Globals.TAG, mFeatureFile.getAbsolutePath());
+		if (sensorType == 0) {
+			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.ACCELEROMETER_FILENAME);
+		}
+		else if (sensorType == 1) {
+			mFeatureFile = new File(Environment.getExternalStorageDirectory(), Globals.GYROSCOPE_FILENAME);
+		}
 
 		mServiceTaskType = Globals.SERVICE_TASK_TYPE_COLLECT;
 
