@@ -10,7 +10,6 @@ package edu.dartmouth.cs.myrunscollector;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.concurrent.ArrayBlockingQueue;
@@ -22,20 +21,16 @@ import weka.core.Instances;
 import weka.core.converters.ArffSaver;
 import weka.core.converters.ConverterUtils.DataSource;
 
-import android.Manifest;
-import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.IBinder;
@@ -50,7 +45,7 @@ public class SensorsService extends Service implements SensorEventListener {
 
 	private File mFeatureFile;
 	private SensorManager mSensorManager;
-	private Sensor mAccelerometer;
+	private Sensor mSensor;
 	private int mServiceTaskType;
 	private String mLabel;
 	private Instances mDataset;
@@ -58,12 +53,17 @@ public class SensorsService extends Service implements SensorEventListener {
 	private OnSensorChangedTask mAsyncTask;
 	private int sensorType;
 
+	private EvictList magnitudeWindow;
+	private int windowSize = 5;
+
 	private static ArrayBlockingQueue<Double> mAccBuffer;
 	public static final DecimalFormat mdf = new DecimalFormat("#.##");
 
 	@Override
 	public void onCreate() {
 		super.onCreate();
+
+		magnitudeWindow = new EvictList(windowSize);
 
 		mAccBuffer = new ArrayBlockingQueue<Double>(
 				Globals.ACCELEROMETER_BUFFER_CAPACITY);
@@ -76,16 +76,15 @@ public class SensorsService extends Service implements SensorEventListener {
 
 		sensorType = intent.getIntExtra(Globals.SENSOR_TYPE_TAG, 0);
 		if (sensorType == 0) {
-			mAccelerometer = mSensorManager
-					.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+			mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
 		}
 		else if (sensorType == 1) {
-			mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+			mSensor = mSensorManager.getDefaultSensor(Sensor.TYPE_GYROSCOPE);
 		}
+
 		Log.d("lucho", "sensortype was " + sensorType);
 
-		mSensorManager.registerListener(this, mAccelerometer,
-				SensorManager.SENSOR_DELAY_FASTEST);
+		mSensorManager.registerListener(this, mSensor, SensorManager.SENSOR_DELAY_FASTEST);
 
 		Bundle extras = intent.getExtras();
 		mLabel = extras.getString(Globals.CLASS_LABEL_KEY);
@@ -278,6 +277,7 @@ public class SensorsService extends Service implements SensorEventListener {
 			} else {
 				toastDisp = getString(R.string.ui_sensor_service_toast_success_file_created)   ;
 			}
+
 			Log.i("save","create saver here");
 			// create new Arff file
 			ArffSaver saver = new ArffSaver();
@@ -306,15 +306,16 @@ public class SensorsService extends Service implements SensorEventListener {
 	}
 
 	public void onSensorChanged(SensorEvent event) {
+		if (event.sensor.getType() == Sensor.TYPE_LINEAR_ACCELERATION || event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
 
-		if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER || event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-
-//			Log.d("lucho", "Values are " + event.values[0] + " " + event.values[1] + " " +
-//					event.values[2]);
+			Log.d("lucho", "Values are " + event.values[0] + " " + event.values[1] + " " +
+					event.values[2]);
 
 			double m = Math.sqrt(event.values[0] * event.values[0]
 					+ event.values[1] * event.values[1] + event.values[2]
 					* event.values[2]);
+
+			magnitudeWindow.insert(m);
 
 			// Inserts the specified element into this queue if it is possible
 			// to do so immediately without violating capacity restrictions,
@@ -322,9 +323,13 @@ public class SensorsService extends Service implements SensorEventListener {
 			// if no space is currently available. When using a
 			// capacity-restricted queue, it is generally preferable to use
 			// offer.
+		}
+
+		if(magnitudeWindow.isFull()) {
+			double averageMagnitude = magnitudeWindow.getAverage();
 
 			try {
-				mAccBuffer.add(new Double(m));
+				mAccBuffer.add(averageMagnitude);
 			} catch (IllegalStateException e) {
 
 				// Exception happens when reach the capacity.
@@ -335,7 +340,7 @@ public class SensorsService extends Service implements SensorEventListener {
 
 				mAccBuffer.drainTo(newBuf);
 				mAccBuffer = newBuf;
-				mAccBuffer.add(new Double(m));
+				mAccBuffer.add(averageMagnitude);
 			}
 		}
 	}

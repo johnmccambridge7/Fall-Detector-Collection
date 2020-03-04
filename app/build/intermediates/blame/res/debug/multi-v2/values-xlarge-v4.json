@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/luischamorro/Desktop/Lectures/CS65/Labs/MyRuns5/Shit/SafetyDataCollector/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
+            "outputFile": "/Users/johnmacdonald/Desktop/SafetyDataCollector/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml",
             "map": [
                 {
-                    "source": "/Users/luischamorro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/635b5bdeefda8e7cc0604a4f56c75bd6/res/values-xlarge-v4/values-xlarge-v4.xml",
+                    "source": "/Users/johnmacdonald/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/ede5162d77adb703ea87a314edb7b7b9/res/values-xlarge-v4/values-xlarge-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7",
                         "startColumns": "4,4,4,4,4,4",
